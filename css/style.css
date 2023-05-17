@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    max-width: 85vw;
-    margin: 0 auto;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -27,6 +29,10 @@ body {
 
 h1 {
     letter-spacing: 4px;
+}
+
+.titleh1  {
+    font-size: 2.5em;
 }
 
 .title {
@@ -75,16 +81,86 @@ h1 {
 }
 
 .hard-skills {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.hard-skills h1 {
+.baloons {
+    display: flex;
+    justify-content: space-around;
+    width: 55vw;
+}
+
+.baloon {
+    height: 30vh;
+    border: 0.5px solid rgba(92, 92, 92, 0.587);
+    border-radius: 10px;
+    width: 10vw;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.baloon p {
+    font-weight: bolder;
     font-size: 2em;
 }
 
+.baloon:hover {
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+.baloon.html {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 114, 114, 0.867));
+}
+
+.baloon.css {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(105, 163, 255, 0.867));
+}
+
+.baloon.js {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(253, 255, 124, 0.867));
+}
+
+.baloon.react {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(127, 214, 255, 0.867));
+}
+
+.baloon.db {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 179, 102, 0.867));
+}
+
+.baloon.networking {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(133, 255, 102, 0.867));
+}
+
+.baloon.servers {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 108, 238, 0.867));
+}
+
+.baloon.linux {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(88, 88, 88, 0.867));
+}
+
+.baloon i {
+    font-size: 8em;
+}
+
+.projects {
+    height: 100vh;
+}
+
 footer {
-    height: 30vh;
+    margin-top: 250px;
+    height: 25vh;
+    width: 100%;
+    background-color: rgba(233, 233, 233, 0.882);
 }
