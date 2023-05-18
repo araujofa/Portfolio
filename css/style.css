@@ -86,6 +86,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    background-color: rgba(233, 233, 233, 0.882);
 }
 
 .baloons {
@@ -96,16 +97,17 @@ h1 {
 
 .baloon {
     height: 30vh;
-    border: 0.5px solid rgba(92, 92, 92, 0.587);
-    border-radius: 10px;
+    background-color: white;
     width: 10vw;
     padding: 10px;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #bbbbbbb1;
+    border-radius: 10px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid rgba(117, 117, 255, 0.599);
 }
 
 .baloon p {
@@ -114,53 +116,96 @@ h1 {
 }
 
 .baloon:hover {
-    transform: scale(120%);
+    transform: scale(110%);
     cursor: pointer;
 }
 
-.baloon.html {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 114, 114, 0.867));
-}
-
-.baloon.css {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(105, 163, 255, 0.867));
-}
-
-.baloon.js {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(253, 255, 124, 0.867));
-}
-
-.baloon.react {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(127, 214, 255, 0.867));
-}
-
-.baloon.db {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 179, 102, 0.867));
-}
-
-.baloon.networking {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(133, 255, 102, 0.867));
-}
-
-.baloon.servers {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 108, 238, 0.867));
-}
-
-.baloon.linux {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(88, 88, 88, 0.867));
-}
-
 .baloon i {
-    font-size: 8em;
+    font-size: 7em;
 }
 
 .projects {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(233, 233, 233, 0.882);
+    padding: 50px;
+}
+
+.projects p {
+    font-size: 1.5em;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.grid img{
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #bbbbbbb1;
+}
+
+.grid img:hover {
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+.contact {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.contact img {
+    width: 10%;
+    height: 30%;
+    border-radius: 100%;
+    box-shadow: 5px 10px 18px #bbbbbbb1;
+}
+
+.entreemcontato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entreemcontato p {
+    font-size: 1.3em;
+}
+
+.contact-icons {
+    text-align: center;
+}
+
+.contact-icons i{
+    font-size: 1.3em;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
-    margin-top: 250px;
     height: 25vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(233, 233, 233, 0.882);
 }
